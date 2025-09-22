@@ -1,12 +1,12 @@
-## 🧪Swag-Labs-robot-playwright-cypress
+# 🧪 SauceDemo Test Automation & Documentation | Documentação e Automação de Testes
 
 ## 🌐 Project Overview | Visão Geral do Projeto
 
 This project contains complete test documentation and automation for the site:  
-**https://www.saucedemo.com/v1/**
+**https://www.saucedemo.com/v1/inventory.html**
 
 Este projeto contém a documentação completa de testes e automação para o site:  
-**https://www.saucedemo.com/v1/**
+**https://www.saucedemo.com/v1/inventory.html**
 
 We aim to provide a clear and structured testing process, from planning to execution.  
 Nosso objetivo é fornecer um processo de teste claro e estruturado, do planejamento à execução.
