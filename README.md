@@ -1,4 +1,4 @@
-# 🧪 SauceDemo Test Automation & Documentation | Documentação e Automação de Testes
+# 🧪SauceDemo Test Automation & Documentation
 
 ## 🌐 Project Overview | Visão Geral do Projeto
 
