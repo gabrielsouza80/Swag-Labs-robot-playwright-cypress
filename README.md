@@ -1,5 +1,4 @@
-# Swag-Labs-robot-playwright-cypress
-# 🧪 SauceDemo Test Automation & Documentation | Documentação e Automação de Testes
+# 🧪Swag-Labs-robot-playwright-cypress
 
 ## 🌐 Project Overview | Visão Geral do Projeto
 
