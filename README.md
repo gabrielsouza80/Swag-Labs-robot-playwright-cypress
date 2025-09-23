@@ -37,12 +37,6 @@ Vamos automatizar os testes em três fases:
 1. **Robot Framework** – Keyword-driven testing  
    **Robot Framework** – Testes baseados em palavras-chave
 
-2. **Playwright** – Modern and powerful automation framework  
-   **Playwright** – Framework moderno e poderoso de automação
-
-3. **Cypress** – End-to-end testing focused on JavaScript apps  
-   **Cypress** – Testes ponta-a-ponta focado em aplicações JavaScript
-
 Each phase will include:  
 Cada fase incluirá:
 
@@ -65,8 +59,6 @@ Cada fase incluirá:
 │   └── test-report.pdf
 
 📂 automation/
-│   ├── robot-framework/
-│   ├── playwright/
-│   └── cypress/
+│   └── robot-framework/
 
 📄 README.md
