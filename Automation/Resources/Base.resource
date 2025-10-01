@@ -4,13 +4,15 @@ Library         JSONLibrary
 Library         Collections
 
 #Pages
-Resource        Pages/loginPage.resource
+Resource        Pages/loginPage.resource    
+Resource        Pages/InventoryPage.resource
 
 #Keywords
 Resource        Keywords/LoginKeywords.resource
 
 #locators
 Resource        Locators/LoginLocators.resource
+Resource        Locators/InventoryLocators.resource
 
 *** Variables ***
 
