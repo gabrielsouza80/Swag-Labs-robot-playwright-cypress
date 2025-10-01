@@ -6,10 +6,8 @@ Library         Collections
 #Pages
 Resource        Pages/loginPage.resource
 
-
 #Keywords
 Resource        Keywords/LoginKeywords.resource
-
 
 #locators
 Resource        Locators/LoginLocators.resource
