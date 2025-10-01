@@ -3,9 +3,9 @@ Resource    ../Base.resource
 
 *** Keywords ***
 Go to Login Page
-    Open Browser    ${URL}    ${BROWSER}    options=add_argument(--window-size=${WINDOW_SIZE})
-    Set Selenium Implicit Wait    ${IMPLICIT_WAIT}
-    Set Selenium Timeout    ${PAGE_LOAD_TIMEOUT}
+    Open Browser   browser=chrome  
+    ...  options=add_experimental_option("detach", True)
+    Maximize Browser Window
     Go To    ${URL}
 
 Fill Username
@@ -18,3 +18,7 @@ Fill Password
 
 Click Login
     Click Button    ${LOGIN_BUTTON}
+
+Close the login page
+    Capture Page Screenshot
+    Close Browser

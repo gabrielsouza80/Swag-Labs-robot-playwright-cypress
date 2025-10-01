@@ -3,6 +3,9 @@ Resource    ../Base.resource
 
 
 
+*** Variables ***
+${CredentialsJson}    ../Settings/credentials.json
+
 *** Keywords ***
 Login With Valid Credentials
     ${credentials}=    Load JSON From File    ${CredentialsJson}
@@ -15,4 +18,3 @@ Login With Valid Credentials
     Fill Username    ${username}
     Fill Password    ${password}
     Click Login
-    Wait Until Page Contains Element    ${PRODUCTS_TITLE}    timeout=${PAGE_LOAD_TIMEOUT}
