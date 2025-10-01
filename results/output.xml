@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-10-01T10:49:14.758299" rpa="false" schemaversion="5">
+<suite id="s1" name="SwagLabs-QA-RobotFramework" source="C:\Users\gabri\Desktop\Trabalho\SwagLabs-QA-RobotFramework">
+<suite id="s1-s1" name="RobotFramework Automation" source="C:\Users\gabri\Desktop\Trabalho\SwagLabs-QA-RobotFramework\RobotFramework Automation">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\gabri\Desktop\Trabalho\SwagLabs-QA-RobotFramework\RobotFramework Automation\Test">
+<suite id="s1-s1-s1-s1" name="SwagLabsTest" source="C:\Users\gabri\Desktop\Trabalho\SwagLabs-QA-RobotFramework\RobotFramework Automation\Test\SwagLabsTest.robot">
+<test id="s1-s1-s1-s1-t1" name="Usuário insere credenciais válidas" line="5">
+<kw name="Go to Login Page" owner="loginPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-01T10:49:15.111128" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/v1/'.</msg>
+<msg time="2025-10-01T10:49:15.111361" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-10-01T10:49:15.111602" level="FAIL">ValueError: Unable to parse option: "add_argument(--window-size=2560x1440)"</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument(--window-size=${WINDOW_SIZE})</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-10-01T10:49:15.110767" elapsed="0.006837">ValueError: Unable to parse option: "add_argument(--window-size=2560x1440)"</status>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-10-01T10:49:15.117963" elapsed="0.000197"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${PAGE_LOAD_TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="NOT RUN" start="2025-10-01T10:49:15.118309" elapsed="0.000124"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-10-01T10:49:15.118564" elapsed="0.000368"/>
+</kw>
+<status status="FAIL" start="2025-10-01T10:49:15.110063" elapsed="0.010101">ValueError: Unable to parse option: "add_argument(--window-size=2560x1440)"</status>
+</kw>
+<kw name="Login With Valid Credentials" owner="LoginKeywords">
+<status status="NOT RUN" start="2025-10-01T10:49:15.121401" elapsed="0.000185"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>${PRODUCTS_TITLE}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-10-01T10:49:15.121819" elapsed="0.000107"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-01T10:49:15.122182" elapsed="0.000225"/>
+</kw>
+<doc>Teste de login válido</doc>
+<status status="FAIL" start="2025-10-01T10:49:15.107043" elapsed="0.015487">ValueError: Unable to parse option: "add_argument(--window-size=2560x1440)"</status>
+</test>
+<status status="FAIL" start="2025-10-01T10:49:14.806743" elapsed="0.320299"/>
+</suite>
+<status status="FAIL" start="2025-10-01T10:49:14.798425" elapsed="0.331163"/>
+</suite>
+<status status="FAIL" start="2025-10-01T10:49:14.795219" elapsed="0.336581"/>
+</suite>
+<status status="FAIL" start="2025-10-01T10:49:14.776502" elapsed="0.361438"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="SwagLabs-QA-RobotFramework" id="s1" pass="0" fail="1" skip="0">SwagLabs-QA-RobotFramework</stat>
+<stat name="RobotFramework Automation" id="s1-s1" pass="0" fail="1" skip="0">SwagLabs-QA-RobotFramework.RobotFramework Automation</stat>
+<stat name="Test" id="s1-s1-s1" pass="0" fail="1" skip="0">SwagLabs-QA-RobotFramework.RobotFramework Automation.Test</stat>
+<stat name="SwagLabsTest" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">SwagLabs-QA-RobotFramework.RobotFramework Automation.Test.SwagLabsTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-01T10:49:15.098372" level="ERROR">Error in file 'C:\Users\gabri\Desktop\Trabalho\SwagLabs-QA-RobotFramework\RobotFramework Automation\Resources\Base.resource' on line 19: Error in file 'C:\Users\gabri\Desktop\Trabalho\SwagLabs-QA-RobotFramework\RobotFramework Automation\Test\SwagLabsTest.robot' on line 4: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
