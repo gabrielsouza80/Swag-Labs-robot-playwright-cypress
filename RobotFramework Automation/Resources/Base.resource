@@ -1,6 +1,7 @@
 *** Settings ***
 Library         SeleniumLibrary
 Library         JSONLibrary
+Library         Collections
 
 #Pages
 Resource        Pages/loginPage.resource
@@ -22,7 +23,7 @@ Resource        ../Test/SwagLabsTest.robot
 
 ${URL}                         https://www.saucedemo.com/v1/
 ${BROWSER}                     Chrome       
-${CredentialsJson}            Settings/credentials.json
+${CredentialsJson}             Settings/credentials.json
 
 ${IMPLICIT_WAIT}               5s
 ${PAGE_LOAD_TIMEOUT}           10s    
