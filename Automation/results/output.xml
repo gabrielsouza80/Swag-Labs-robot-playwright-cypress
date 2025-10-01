@@ -1,116 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-10-01T12:08:48.694435" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-10-01T15:00:53.396971" rpa="false" schemaversion="5">
 <suite id="s1" name="SwagLabsTest" source="C:\Users\gabri\Desktop\Trabalho\SwagLabs-QA-RobotFramework\automation\Test\SwagLabsTest.robot">
 <test id="s1-t1" name="Usuário insere credenciais válidas" line="8">
 <kw name="Go to Login Page" owner="loginPage" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-01T12:08:48.959146" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-10-01T15:00:53.882294" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-01T12:08:48.958989" elapsed="1.141979"/>
+<status status="PASS" start="2025-10-01T15:00:53.882051" elapsed="1.679656"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.101308" elapsed="0.036965"/>
+<status status="PASS" start="2025-10-01T15:00:55.562001" elapsed="0.041892"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-01T12:08:50.138838" level="INFO">Opening url 'https://www.saucedemo.com/v1/'</msg>
+<msg time="2025-10-01T15:00:55.604545" level="INFO">Opening url 'https://www.saucedemo.com/v1/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.138527" elapsed="0.165477"/>
+<status status="PASS" start="2025-10-01T15:00:55.604264" elapsed="0.451489"/>
 </kw>
-<status status="PASS" start="2025-10-01T12:08:48.958511" elapsed="1.345627"/>
+<status status="PASS" start="2025-10-01T15:00:53.881370" elapsed="2.174561"/>
 </kw>
 <kw name="Login With Valid Credentials" owner="LoginKeywords">
 <kw name="Load Json From File" owner="JSONLibrary">
-<msg time="2025-10-01T12:08:50.305482" level="INFO">${credentials} = {'users': [{'role': 'standard', 'username': 'standard_user', 'password': 'secret_sauce'}, {'role': 'Locked', 'username': 'locked_out_user', 'password': 'secret_sauce'}, {'role': 'problem', 'username':...</msg>
+<msg time="2025-10-01T15:00:56.057649" level="INFO">${credentials} = {'users': [{'role': 'standard', 'username': 'standard_user', 'password': 'secret_sauce'}, {'role': 'Locked', 'username': 'locked_out_user', 'password': 'secret_sauce'}, {'role': 'problem', 'username':...</msg>
 <var>${credentials}</var>
 <arg>${CredentialsJson}</arg>
 <doc>Load JSON from file.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.304992" elapsed="0.000518"/>
+<status status="PASS" start="2025-10-01T15:00:56.056798" elapsed="0.000883"/>
 </kw>
 <kw name="Get From Dictionary" owner="Collections">
-<msg time="2025-10-01T12:08:50.305709" level="INFO">${users} = [{'role': 'standard', 'username': 'standard_user', 'password': 'secret_sauce'}, {'role': 'Locked', 'username': 'locked_out_user', 'password': 'secret_sauce'}, {'role': 'problem', 'username': 'problem_...</msg>
+<msg time="2025-10-01T15:00:56.057935" level="INFO">${users} = [{'role': 'standard', 'username': 'standard_user', 'password': 'secret_sauce'}, {'role': 'Locked', 'username': 'locked_out_user', 'password': 'secret_sauce'}, {'role': 'problem', 'username': 'problem_...</msg>
 <var>${users}</var>
 <arg>${credentials}</arg>
 <arg>users</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.305597" elapsed="0.000129"/>
+<status status="PASS" start="2025-10-01T15:00:56.057802" elapsed="0.000150"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2025-10-01T12:08:50.305869" level="INFO">${user_dictionary} = {'role': 'standard', 'username': 'standard_user', 'password': 'secret_sauce'}</msg>
+<msg time="2025-10-01T15:00:56.058106" level="INFO">${user_dictionary} = {'role': 'standard', 'username': 'standard_user', 'password': 'secret_sauce'}</msg>
 <var>${user_dictionary}</var>
 <arg>${users}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.305788" elapsed="0.000095"/>
+<status status="PASS" start="2025-10-01T15:00:56.058020" elapsed="0.000101"/>
 </kw>
 <kw name="Get From Dictionary" owner="Collections">
-<msg time="2025-10-01T12:08:50.306024" level="INFO">${username} = standard_user</msg>
+<msg time="2025-10-01T15:00:56.058259" level="INFO">${username} = standard_user</msg>
 <var>${username}</var>
 <arg>${user_dictionary}</arg>
 <arg>username</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.305937" elapsed="0.000099"/>
+<status status="PASS" start="2025-10-01T15:00:56.058182" elapsed="0.000090"/>
 </kw>
 <kw name="Get From Dictionary" owner="Collections">
-<msg time="2025-10-01T12:08:50.306157" level="INFO">${password} = secret_sauce</msg>
+<msg time="2025-10-01T15:00:56.058439" level="INFO">${password} = secret_sauce</msg>
 <var>${password}</var>
 <arg>${user_dictionary}</arg>
 <arg>password</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.306089" elapsed="0.000080"/>
+<status status="PASS" start="2025-10-01T15:00:56.058328" elapsed="0.000128"/>
 </kw>
 <kw name="Fill Username" owner="loginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-01T12:08:50.306677" level="INFO">Typing text 'standard_user' into text field 'css:input[id*="user-name"]'.</msg>
+<msg time="2025-10-01T15:00:56.059050" level="INFO">Typing text 'standard_user' into text field 'css:input[id*="user-name"]'.</msg>
 <arg>${LOGIN_USERNAME_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.306405" elapsed="0.102049"/>
+<status status="PASS" start="2025-10-01T15:00:56.058736" elapsed="0.107105"/>
 </kw>
 <arg>${username}</arg>
-<status status="PASS" start="2025-10-01T12:08:50.306258" elapsed="0.102707"/>
+<status status="PASS" start="2025-10-01T15:00:56.058563" elapsed="0.107406"/>
 </kw>
 <kw name="Fill Password" owner="loginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-01T12:08:50.409656" level="INFO">Typing text 'secret_sauce' into text field 'css:input[id="password"]'.</msg>
+<msg time="2025-10-01T15:00:56.166583" level="INFO">Typing text 'secret_sauce' into text field 'css:input[id="password"]'.</msg>
 <arg>${LOGIN_PASSWORD_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.409444" elapsed="0.062014"/>
+<status status="PASS" start="2025-10-01T15:00:56.166412" elapsed="0.061350"/>
 </kw>
 <arg>${password}</arg>
-<status status="PASS" start="2025-10-01T12:08:50.409145" elapsed="0.062450"/>
+<status status="PASS" start="2025-10-01T15:00:56.166146" elapsed="0.061750"/>
 </kw>
 <kw name="Click Login" owner="loginPage">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-01T12:08:50.472131" level="INFO">Clicking button 'css:input[id="login-button"]'.</msg>
+<msg time="2025-10-01T15:00:56.228424" level="INFO">Clicking button 'css:input[id="login-button"]'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.471979" elapsed="0.217695"/>
+<status status="PASS" start="2025-10-01T15:00:56.228274" elapsed="0.310879"/>
 </kw>
-<status status="PASS" start="2025-10-01T12:08:50.471772" elapsed="0.218014"/>
+<status status="PASS" start="2025-10-01T15:00:56.228066" elapsed="0.311325"/>
 </kw>
-<status status="PASS" start="2025-10-01T12:08:50.304702" elapsed="0.385125"/>
+<status status="PASS" start="2025-10-01T15:00:56.056413" elapsed="0.483073"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-10-01T15:00:56.551689" level="INFO">Current page contains element 'css:.product_label'.</msg>
+<arg>${DivTitleHeader}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-10-01T15:00:56.539998" elapsed="0.011821"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-01T15:01:16.552819" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-01T15:00:56.552160" elapsed="20.000898"/>
 </kw>
 <kw name="Close the login page" owner="loginPage" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-01T12:08:50.918446" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-01T15:01:16.726370" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.690443" elapsed="0.228130"/>
+<status status="PASS" start="2025-10-01T15:01:16.554265" elapsed="0.172233"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-01T12:08:50.918766" elapsed="2.110499"/>
+<status status="PASS" start="2025-10-01T15:01:16.726696" elapsed="2.177388"/>
 </kw>
-<status status="PASS" start="2025-10-01T12:08:50.690219" elapsed="2.339255"/>
+<status status="PASS" start="2025-10-01T15:01:16.553947" elapsed="2.350275"/>
 </kw>
 <doc>Teste de login válido</doc>
-<status status="PASS" start="2025-10-01T12:08:48.957884" elapsed="4.071816"/>
+<status status="PASS" start="2025-10-01T15:00:53.880194" elapsed="25.024272"/>
 </test>
-<status status="PASS" start="2025-10-01T12:08:48.695872" elapsed="4.334616"/>
+<status status="PASS" start="2025-10-01T15:00:53.398553" elapsed="25.506849"/>
 </suite>
 <statistics>
 <total>

@@ -8,4 +8,5 @@ Test Teardown    Close the login page
 Usuário insere credenciais válidas
     [Documentation]    Teste de login válido
     Login With Valid Credentials
-    
+    Page Should Contain Element    ${DivTitleHeader}
+    Sleep        20s
