@@ -1,11 +1,9 @@
 *** Settings ***
-Resource    ../Base.resource
+Resource    ../../Base.resource
 
 *** Keywords ***
-Click on "Open Menu"
+Click on "Logout"
     Click Element    ${BtnOpenMenu}
     Sleep    2s
-
-Click on "Logout"
     Click Element    ${ABtnLogout}
     

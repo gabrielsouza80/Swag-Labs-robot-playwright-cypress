@@ -1,3 +1,6 @@
+*** Settings ***
+Resource    ../../Base.resource
+
 *** Variables ***
 ${LOGIN_USERNAME_FIELD}                                css:input[id*="user-name"]
 ${LOGIN_PASSWORD_FIELD}                                css:input[id="password"]

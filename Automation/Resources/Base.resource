@@ -3,19 +3,17 @@ Library         SeleniumLibrary
 Library         JSONLibrary
 Library         Collections
 
-#Pages
-Resource        Pages/loginPage.resource    
-Resource        Pages/InventoryPage.resource
 
 #Keywords
-Resource        Keywords/LoginKeywords.resource
+Resource        ./Pages/LoginPage/LoginKeywords.resource
+Resource        ./Pages/InventoryPage/InventoryKeywords.resource
+
 
 #locators
-Resource        Locators/LoginLocators.resource
-Resource        Locators/InventoryLocators.resource
+Resource        ./Pages/LoginPage/LoginLocators.resource
+Resource        ./Pages/InventoryPage/InventoryLocators.resource
 
 *** Variables ***
-
 ${URL}                         https://www.saucedemo.com/v1/
 ${BROWSER}                     Chrome       
 
@@ -23,10 +21,12 @@ ${CredentialsJson}             Resources/Settings/credentials.json
 
 
 *** Keywords ***
-Abrir o navegador
+Go to Login Page
     Open Browser   browser=chrome  
     ...  options=add_experimental_option("detach", True)
+    Maximize Browser Window
+    Go To    ${URL}
 
-Fechar o navegador
+Close the login page
     Capture Page Screenshot
     Close Browser
