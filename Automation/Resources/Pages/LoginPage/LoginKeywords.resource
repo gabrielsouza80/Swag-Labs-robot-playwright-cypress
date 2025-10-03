@@ -19,20 +19,19 @@ Login with credentials
     Input Text    ${LOGIN_PASSWORD_FIELD}    ${password}
     Click Button    ${LOGIN_BUTTON}
 
-Verificar que foi para pagina esperada            
+Check if you went to the expected page            
     [Arguments]    ${LocatorPageExpected}
     Page Should Contain Element    ${LocatorPageExpected}
 
-Verificar Mensagem de erro
+Check Message
     [Arguments]    ${mensagem_esperada}
     Page Should Contain    ${mensagem_esperada}    
 
-Login without credentials
-    Input Text    ${LOGIN_USERNAME_FIELD}    ${EMPTY}
-    Input Text    ${LOGIN_USERNAME_FIELD}    ${EMPTY} 
+Login with invalid credentials
+    [Arguments]    ${username}    ${password}
+    Input Text    ${LOGIN_USERNAME_FIELD}    ${username}
+    Input Text    ${LOGIN_PASSWORD_FIELD}    ${password}
     Click Button    ${LOGIN_BUTTON}
-
-
 
 
 
