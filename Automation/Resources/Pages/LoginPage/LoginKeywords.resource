@@ -13,7 +13,10 @@ Login with credentials
 
     # Pega a lista "users" do JSON
     ${users}=    Get From Dictionary    ${credentials}    users
-
+    
+    #variavel para armazenar o dicionário do usuário encontrado
+    ${user_dictionary}=    Set Variable    ${None}
+    
     # Percorre a lista de usuários procurando aquele cujo campo "role" corresponde ao argumento ${role}
     FOR    ${i}    IN    @{users}                                                                               # Inicia um loop, onde ${i} representa cada usuário (dicionário) da lista @{users}
         ${user_role}=    Get From Dictionary    ${i}    role                                                    # Pega o valor da chave "role" dentro do dicionário atual (${i}) e armazena em ${user_role}
@@ -33,6 +36,7 @@ Login with credentials
     Input Text    ${LOGIN_USERNAME_FIELD}    ${username}
     Input Text    ${LOGIN_PASSWORD_FIELD}    ${password}
     Click Button    ${LOGIN_BUTTON}
+    Sleep    5s
 
 Check if you went to the expected page            
     [Arguments]    ${LocatorPageExpected}

@@ -2,7 +2,7 @@
 Library         SeleniumLibrary
 Library         JSONLibrary
 Library         Collections
-Library         Browser
+
 
 #Keywords
 Resource        ./Pages/LoginPage/LoginKeywords.resource
@@ -14,8 +14,8 @@ Resource        ./Pages/InventoryPage/InventoryLocators.resource
 
 *** Variables ***
 ${URL}         https://www.saucedemo.com/v1/
-${BROWSER}     chromium
-@{ARGS}        --disable-password-manager-reauthentication    --disable-save-password-bubble    --disable-notifications    --disable-popup-blocking
+${BROWSER}     Edge
+
 
 
 
@@ -24,10 +24,11 @@ ${CredentialsJson}             Resources/Settings/credentials.json
 
 *** Keywords ***
 Go to Login Page
-    New Browser    ${BROWSER}    headless=False    args=${ARGS}
-    New Context
-    New Page    ${URL}
+    # Abre o navegador com os argumentos
+    Open Browser    ${URL}    ${BROWSER}    
 
+    
 Close the login page
     Capture Page Screenshot
-    Browser.Close Browser
+    Close Browser
+

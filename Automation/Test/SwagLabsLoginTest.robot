@@ -77,13 +77,13 @@ Criar-Usuário insere username Locked Out
 
 Criar-Usuário insere username Problem User
     [Documentation]    Teste de login com usuário problemático
-    [Tags]    
+    [Tags]    Criar2    
     Login with credentials    problem
     Check if you went to the expected page    ${DivTitleHeaderInventory}
 
 
 Criar-Usuário insere username Performance Problem
     [Documentation]    Teste de login com usuário com problema de performance
-    [Tags]    
+    [Tags]    Criar3   
     Login with credentials    performance_problem
     Check if you went to the expected page    ${DivTitleHeaderInventory}
